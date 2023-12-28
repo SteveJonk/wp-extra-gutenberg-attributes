@@ -39,6 +39,7 @@ addFilter(
 
 /**
  * Edit component for the block.
+ * This is the configuration that will be rendered in the editor.
  *
  * @param {object} props block props
  * @returns {JSX}

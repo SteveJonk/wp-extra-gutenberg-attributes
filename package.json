@@ -1,7 +1,7 @@
 {
 	"name": "extra-gutenberg-attributes",
 	"version": "0.1.0",
-	"description": "A plugin that adds extra attributes to the standard Gutenberg blocks",
+	"description": "A plugin that adds extra attributes to the core Gutenberg blocks",
 	"author": "Stef",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

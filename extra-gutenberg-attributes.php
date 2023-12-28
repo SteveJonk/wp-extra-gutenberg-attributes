@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Extra Gutenberg Attributes
- * Description:       A plugin that adds extra attributes to the standard Gutenberg blocks.
+ * Description:       A plugin that adds extra attributes to the core Gutenberg blocks.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
