@@ -1,12 +1,43 @@
 /**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
+ * The following styles only get applied  on the front of your site
  */
 
-.wp-block-stef-extra-gutenberg-attributes {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+/**
+ * Screen Mixins
+ */
+
+@mixin Mobile {
+	@media (max-width: 530px) {
+		@content;
+	}
+}
+
+@mixin Tablet {
+	@media (max-width: 769px) {
+		@content;
+	}
+}
+
+@mixin smallDesktop {
+	@media (max-width: 990px) {
+		@content;
+	}
+}
+
+@mixin onlyDesktop {
+	@media (min-width: 769px) {
+		@content;
+	}
+}
+
+@mixin NoMobile {
+	@media (min-width: 530px) {
+		@content;
+	}
+}
+
+.mobile-hidden {
+	@include Mobile {
+		display: none;
+	}
 }
