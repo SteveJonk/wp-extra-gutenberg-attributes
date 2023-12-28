@@ -36,7 +36,7 @@ add_action('enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_editor_modif
 function enqueue_styles()
 {
 	$asset_file = include plugin_dir_path(__FILE__) . 'build/index.asset.php';
-	wp_enqueue_style('extra-gutenberg-attributes', plugin_dir_url(__FILE__) . 'build/style-index.css', [], $asset_file['version']);
+	wp_enqueue_style('extra-gutenberg-attributes', plugin_dir_url(__FILE__) . 'build/style-scripts.css', [], $asset_file['version']);
 }
 
 add_action('enqueue_block_assets', __NAMESPACE__ . '\enqueue_styles');

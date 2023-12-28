@@ -44,8 +44,8 @@ addFilter(
  * @param {object} props block props
  * @returns {JSX}
  */
-function Edit(props) {
-	const setIsMobileHidden = (value) => {
+function Edit(props: any) {
+	const setIsMobileHidden = (value: boolean) => {
 		props.setAttributes({ isMobileHidden: value });
 	};
 
@@ -77,7 +77,7 @@ addFilter(
 	"editor.BlockEdit",
 	"stef/gutenberg-extra-attributes",
 	createHigherOrderComponent((BlockEdit) => {
-		return (props) => {
+		return (props: any) => {
 			if (!props.name.includes("core/")) {
 				return <BlockEdit {...props} />;
 			}
@@ -89,7 +89,7 @@ addFilter(
 				</>
 			);
 		};
-	}),
+	}, "null"),
 );
 
 /**
@@ -102,7 +102,7 @@ addFilter(
  * @return {Object} extraProps Modified block element.
  */
 
-function applyExtraClass(extraProps, blockType, attributes) {
+function applyExtraClass(extraProps: any, blockType: any, attributes: any) {
 	const { isMobileHidden } = attributes;
 
 	if (isMobileHidden) {
