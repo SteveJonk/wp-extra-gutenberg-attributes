@@ -1,5 +1,3 @@
-Certainly! Here's the modified version of the readme without the installation section:
-
 # Custom Gutenberg Attributes Plugin
 
 ## Description
