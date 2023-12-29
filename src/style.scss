@@ -37,7 +37,7 @@
 }
 
 .mobile-hidden {
-	@include Mobile {
+	@include Tablet {
 		display: none;
 	}
 }
